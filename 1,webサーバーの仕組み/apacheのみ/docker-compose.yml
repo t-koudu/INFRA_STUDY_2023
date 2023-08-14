@@ -1,0 +1,9 @@
+version: '3'
+services:
+  httpd:
+    container_name: httpd-container
+    build: ./apache
+    tty: true
+    ports:
+      - "80:80"
+      - "81:81"
